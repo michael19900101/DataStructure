@@ -7,10 +7,6 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Stack;
 
-/**
- * Created by Jett on 2018/12/14.
- */
-
 public class HuffmanTree {
     TreeNode root;
 
@@ -45,21 +41,6 @@ public class HuffmanTree {
                 list.offer(node.rightChild);
             }
         }
-    }
-
-    public void test() {
-        ArrayList<TreeNode> list = new ArrayList<>();
-        TreeNode<String> node = new TreeNode("good", 50);
-        list.add(node);
-        list.add(new TreeNode("morning", 10));
-        TreeNode<String> node2 = new TreeNode("afternoon", 20);
-        list.add(node2);
-        list.add(new TreeNode("hell", 110));
-        list.add(new TreeNode("hi", 200));
-        HuffmanTree tree = new HuffmanTree();
-        tree.createHuffManTree(list);
-        tree.showHuffman(tree.root);
-        getCode(node2);
     }
 
     /**
